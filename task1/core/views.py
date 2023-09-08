@@ -18,8 +18,8 @@ class InfoAPIView(APIView):
         current_utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
         # Define GitHub repository information
-        github_repo_url = 'https://github.com/johnpauljpc/HNGx/task1'
-        github_file_url = 'https://github.com/johnpauljpc/HNGx/task1/core/views.py'
+        github_repo_url = "https://github.com/johnpauljpc/HNGx"
+        github_file_url = "https://github.com/johnpauljpc/HNGx/blob/main/task1/core/views.py"
 
         # Create the response JSON
         response_data = {
@@ -27,8 +27,8 @@ class InfoAPIView(APIView):
             'current_day_of_week': current_day_of_week,
             'current_utc_time': current_utc_time,
             'track': track,
-            'github_repo_url': github_repo_url,
             'github_file_url': github_file_url,
+            'github_repo_url': github_repo_url,
             'status_code': 200
         }
 
